@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Um Teste</title>
+    <style>
+        button {
+            height: 60px;
+            width: 140px;
+            font-size: 1.3em;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        button:hover {
+            color: white;
+            background-color: rgba(0, 0, 0, 0.644);
+            transition: 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <h1>Apresentação</h1>
+    <button onclick="clicou()">Clique Aqui</button>
+    <script>
+        function clicou() {
+            var nome = window.prompt (`Qual o seu nome ?`)
+            window.alert (`Olá ${nome}, é um prazer te conhecer`)
+        }
+    </script>
+</body>
+</html>
